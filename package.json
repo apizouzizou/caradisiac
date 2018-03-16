@@ -1,0 +1,32 @@
+{
+  "name": "caradisiac",
+  "version": "1.0.0",
+  "description": "> Drive comfortably",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "elasticsearch": "^14.2.0",
+    "express": "^4.16.3",
+    "mongodb": "^2.2.16",
+    "node-car-api": "git+https://github.com/92bondstreet/node-car-api.git"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  },
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apizouzizou/caradisiac.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apizouzizou/caradisiac/issues"
+  },
+  "homepage": "https://github.com/apizouzizou/caradisiac#readme"
+}
