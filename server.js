@@ -3,10 +3,13 @@ const elasticsearch    = require('elasticsearch');
 const bodyParser     = require('body-parser');
 const app            = express();
 
+
 var client = new elasticsearch.Client({
   host: 'localhost:9200',
   log: 'trace'
 });
+
+const port = 9292;
 
 client.ping({
   requestTimeout: 30000,
@@ -18,8 +21,6 @@ client.ping({
   }
 });
 
-
-const port = 8000;
 
 app.use(bodyParser.urlencoded({extended: true }));
 
